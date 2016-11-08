@@ -1,12 +1,13 @@
 public class MainCallOtherMain {
     public static void main(String[] args) {
         System.out.println("Starting MainCallOtherMain");
+        //printArray(args);
         for (String s : args) {
             System.out.println(s + ' ');
         }
-        String[] nargs = {"main", "call", "other", "main"};
+        //String[] nargs = {"main", "call", "other", "main"};
         // main is a static method.
-        Other.main(nargs);
+        Other.main(new String[]{"main", "call", "other", "main"});
     }
 }
 
