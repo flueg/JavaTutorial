@@ -24,9 +24,13 @@ class Province extends Country {
 
 class City extends Province {
     City() {
+        // This will call the default constructor of base class without parameter.
         print("Works in Shenzhen");
     }
     City(String s) {
+        // explicitly call the base constructor with parameter.
+        // otherwise this will call the default constructor without parameter.
+        // Note that: this must be the very first statment in constructor.
         super("gd");
         print("Works in " + s);
     }
