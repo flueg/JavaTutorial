@@ -29,8 +29,20 @@ public class Sequence {
         public void next() {if (i < items.length) i++;}
     }
 
+    // The inner-class technic allows another selecotr implementation more easily.
+    private class ReverseSelector implements Selector {
+        private int i = items.length - 1;
+        public boolean end() { return i < 0; }
+        public Object current() {return items[i];}
+        public void next() {if (i >= 0) i--;}
+    }
+
     public Selector selector() { 
         return new SequenceSelector();
+    }
+
+    public Selector reverseSelector() { 
+        return new ReverseSelector();
     }
 
     public static void main(String[] args) {
@@ -44,5 +56,13 @@ public class Sequence {
             selector.next();
         }
         print();
-    }
+     
+        print("Reverse selector:");
+        selector = sequence.reverseSelector();
+        while (!selector.end()) {
+            printnb(selector.current() + " ");
+            selector.next();
+        }
+        print();
+   }
 }
