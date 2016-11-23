@@ -8,4 +8,4 @@ This is my private java learning tutorial project. including many useless code y
 >constructor/:      The constructor, init order and fake destructor.  
 >amazing/:          main calls another main  
 >inheritance/:      implicity/explicity call the constructor of super class.  
->innerClass/:       Iterator pattern
+>innerClass/:       Iterator pattern; event-driven system
