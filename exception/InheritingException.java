@@ -15,6 +15,7 @@ public class InheritingException {
         try {
             ie.f();
         } catch(SimpleException e) {
+            e.printStackTrace(System.out);
             print("Catch SimpleException:"+e.toString());
         }
     }
