@@ -9,3 +9,4 @@ This is my private java learning tutorial project. including many useless code y
 >amazing/:          main calls another main  
 >inheritance/:      implicity/explicity call the constructor of super class.  
 >innerClass/:       Iterator pattern; event-driven system
+>exceptions/:       Tutorials about exception eroor handling.
