@@ -40,10 +40,48 @@ public class Conversion {
         //f.format("c: %c\n", w);
         f.format("b: %b\n", w);
         f.format("s: %s\n", w);
-        //Seems integer could not implictly convert to float.
+        //Seems integer could not implictly be converted to float.
         //f.format("f: %f\n", w);
         //f.format("e: %e\n", w);
         f.format("x: %x\n", w);
         f.format("h: %h\n", w);
+
+        double x = 123.456;
+        print();
+        print("double x = 123.455");
+        //Seems float could not implictly be converted to integer.
+        //f.format("d: %d\n", x);
+        //f.format("c: %c\n", x);
+        f.format("b: %b\n", x);
+        f.format("s: %s\n", x);
+        f.format("f: %f\n", x);
+        f.format("e: %e\n", x);
+        //f.format("x: %x\n", x);
+        f.format("h: %h\n", x);
+
+        Conversion y = new Conversion();
+        print();
+        print("y = new Conversion()");
+        //f.format("d: %d\n", y);
+        //f.format("c: %c\n", y);
+        f.format("b: %b\n", y);
+        f.format("s: %s\n", y);
+        //f.format("f: %f\n", y);
+        //f.format("e: %e\n", y);
+        //f.format("x: %x\n", y);
+        f.format("h: %h\n", y);
+
+        Boolean z = false;
+        print();
+        print("z = new Boolean()");
+        //f.format("d: %d\n", z);
+        //f.format("c: %c\n", z);
+        f.format("b: %b\n", z);
+        f.format("s: %s\n", z);
+        //f.format("f: %f\n", z);
+        //f.format("e: %e\n", z);
+        //f.format("x: %x\n", z);
+        f.format("h: %h\n", z);
+
     }
 }
